@@ -294,10 +294,6 @@ button {
         height: auto;
     }
 
-    .menu {
-        gap: 20px;
-    }
-
     /* Weather container */
 
     .weather-container {
