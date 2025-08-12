@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taiwan Fire Disaster Prevention</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 
 <body>
@@ -93,8 +96,62 @@
 
     <section class="map">
 
+        <div id="map" style="width: 100%; height: 750px;"></div>
 
+        <script>
+            var map = L.map('map').setView([25.0330, 121.5654], 10);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18
+            }).addTo(map);
+
+            var rightIcon = L.control({ position: 'topright' });
+            rightIcon.onAdd = function (map) {
+                var img = L.DomUtil.create('img', 'right-icon-1');
+                img.src = '圖/layer.png';
+                img.style.width = '50px';
+                return img;
+            };
+
+            rightIcon.addTo(map);
+            var rightIcon = L.control({ position: 'bottomright' });
+            rightIcon.onAdd = function (map) {
+                var img = L.DomUtil.create('img', 'right-icon');
+                img.src = '圖/position.png';
+                img.style.width = '50px';
+                return img;
+            };
+            rightIcon.addTo(map);
+        </script>
     </section>
+
+    <section class="Instant-Messenger">
+        <div class="Instant-Messenger-container">
+            <button class="Messenge-btn1">
+                <div class="Messenge">
+                    <img src="/圖/message-text-w.png" alt="">
+                    <h2>災情回報</h2>
+                </div>
+                <img src="/圖/arrow-right.png" alt="">
+            </button>
+
+            <button class="Messenge-btn2">
+                <div class="Messenge2">
+                    <img src="/圖/message-text.png" alt="">
+                    <h2>災情回報追蹤</h2>
+                </div>
+                <img src="/圖/arrow-right-b.png" alt="">
+            </button>
+        </div>
+        <div class="Notice">
+            <h2>防災須知</h2>
+            <ul class="disaster">
+                <div class="mudslide"><img src="/圖/土石流.png" alt=""></div>
+                <div class="earthquake"><img src="/圖/地震.png" alt=""></div>
+                <div class="hail"><img src="/圖/冰雹.png" alt=""></div>
+            </ul>
+        </div>
+    </section>
+
     <button class="gotop">
         <img src="/圖/gotop.png" alt="">
     </button>

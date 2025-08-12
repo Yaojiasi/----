@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-img {
+.personal-area img {
     vertical-align: middle;
     width: 80%;
 }
@@ -39,6 +39,7 @@ p {
     right: 20px;
     bottom: 20px;
     width: 30px;
+    z-index: 1000;
 }
 
 
@@ -251,6 +252,122 @@ button {
     display: none;
 }
 
+/* 地圖 */
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+.leaflet-top.leaflet-left {
+    top: 50px;
+    left: 30px;
+    z-index: 500;
+}
+
+.right-icon-1 {
+    top: 50px;
+    right: 20px;
+    z-index: 500;
+}
+
+.right-icon {
+    right: 20px;
+    z-index: 500;
+}
+
+/* 災情即時通 */
+
+.Instant-Messenger {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Instant-Messenger-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    justify-content: center
+}
+
+.Messenge-btn1 {
+    display: flex;
+    width: 426px;
+    height: 100px;
+    padding: 36px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--color-3, #466696);
+}
+
+.Messenge-btn1>img {
+    width: 30px;
+    height: 30px;
+}
+
+.Messenge,
+.Messenge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Messenge>img,
+.Messenge-btn2>img,
+.Messenge2>img {
+    width: 30px;
+    height: 30px;
+}
+
+.Messenge>h2 {
+    color: #ffffff;
+}
+
+.Messenge-btn2 {
+    display: flex;
+    width: 426px;
+    height: 100px;
+    padding: 36px 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: #ffffff
+}
+
+.Notice {
+    display: flex;
+    padding: 36px 128px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--color-3, #466696);
+    background: #FFF;
+}
+
+.disaster {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.mudslide,
+.earthquake,
+.hail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 32px 56px;
+    border-radius: 10px;
+    background: var(--color-1, #E6F2C7);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 @media (max-width: 768px) {
 
     body {
@@ -265,7 +382,7 @@ button {
         width: 100%;
         display: flex;
         align-items: center;
-
+        z-index: 1000;
     }
 
     .logo img {
@@ -277,7 +394,7 @@ button {
         /* 避免被絕對定位搞亂位置 */
         width: 100%;
         padding: 10px 20px;
-        justify-items: center;
+        justify-items: space-evenly;
     }
 
     .icon-desktop,
@@ -359,6 +476,7 @@ button {
     }
 
     p {
+        font-size: 14px;
         width: 200px;
     }
 
@@ -386,5 +504,7 @@ button {
         flex-direction: column;
         padding: 20px 0px;
     }
+
+
 
 }
