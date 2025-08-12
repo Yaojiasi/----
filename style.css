@@ -254,8 +254,16 @@ button {
 
 /* 地圖 */
 .map {
-    width: 100%;
+    width: 85%;
     height: 100%;
+    border-radius: 10px;
+    z-index: 500;
+}
+
+.map h2 {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center
 }
 
 .leaflet-top.leaflet-left {
@@ -281,6 +289,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding: 50px 0px;
 }
 
 .Instant-Messenger-container {
@@ -366,6 +375,13 @@ button {
     border-radius: 10px;
     background: var(--color-1, #E6F2C7);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.disaster-name {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+
 }
 
 @media (max-width: 768px) {
