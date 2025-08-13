@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-.personal-area img {
+.personal-area img,
+.cloud-drizzle img {
     vertical-align: middle;
     width: 80%;
 }
@@ -122,6 +123,8 @@ button {
     font: inherit;
 }
 
+
+
 .front-page {
     display: flex;
     width: 100%;
@@ -203,6 +206,10 @@ button {
     background: #FFF;
 }
 
+.news2:hover {
+    background-color: #C5C5C5;
+}
+
 .news-card {
     display: flex;
     gap: 30px;
@@ -260,6 +267,13 @@ button {
     justify-content: center;
     border-radius: 100px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bag:hover,
+.archive-tick:hover,
+.message-edit:hover {
+    background-color: #C5C5C5;
+
 }
 
 .icon-mobile {
@@ -324,6 +338,11 @@ button {
     background: var(--color-3, #466696);
 }
 
+.Messenge-btn1:hover {
+    background-color: #C5C5C5;
+    /* 滑鼠移上去的背景顏色 */
+}
+
 .Messenge-btn1>img {
     width: 30px;
     height: 30px;
@@ -348,6 +367,7 @@ button {
     color: #ffffff;
 }
 
+
 .Messenge-btn2 {
     display: flex;
     width: 400px;
@@ -358,6 +378,11 @@ button {
     border-radius: 10px;
     background: #ffffff;
     border: 1px solid #466696;
+}
+
+.Messenge-btn2:hover {
+    background-color: #C5C5C5;
+    /* 滑鼠移上去的背景顏色 */
 }
 
 .Notice {
@@ -451,7 +476,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+
     }
 
     /* menu */
@@ -586,7 +611,7 @@ button {
 
     .Instant-Messenger {
 
-        padding: 30px 0px;
+        padding: 50px 0px;
     }
 
     .Instant-Messenger-container {
@@ -607,7 +632,7 @@ button {
     .Messenge-btn1,
     .Messenge-btn2 {
         width: 300px;
-        height: 100px;
+        height: 80px;
     }
 
     .Notice {
