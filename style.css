@@ -18,7 +18,7 @@ h5 {
     color: #414141;
     font-family: Inter;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 30px;
 }
 
@@ -395,17 +395,49 @@ button {
 
 /* footer */
 .footer {
-    display: flex;
     width: 100%;
-    padding: 60px;
-    flex-direction: column;
+    padding: 50px 150px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    background: #c5c5c5;
+    background: #747474;
+
 }
 
-@media (max-width: 768px) {
+.footer-container {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact>h3,
+.contact>h5 {
+    color: #ffffff;
+}
+
+.contact>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: Inter;
+}
+
+.qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.qrcode img {
+    width: 100px;
+}
+
+@media (max-width: 900px) {
 
     body {
         display: flex;
@@ -573,5 +605,19 @@ button {
         width: 321px;
         height: 1015px;
         padding: 36px 50px;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 50px 100px;
+    }
+
+    .footer-container {
+        justify-content: center
+    }
+
+    .qrcode {
+        display: none;
     }
 }
