@@ -328,7 +328,7 @@ button {
 
 /* 災情即時通 */
 
-.Instant-Messenger {
+#Instant-Messenger {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -638,7 +638,7 @@ button {
 
     /* 災情即時通 */
 
-    .Instant-Messenger {
+    #Instant-Messenger {
 
         padding: 50px 0px;
     }
