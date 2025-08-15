@@ -12,6 +12,10 @@
     width: 80%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2,
 h3,
 h4,
@@ -125,7 +129,7 @@ button {
 
 
 
-.front-page {
+#front-page {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -528,7 +532,7 @@ button {
         gap: 50px;
     }
 
-    .front-page {
+    #front-page {
         gap: 20px
     }
 
